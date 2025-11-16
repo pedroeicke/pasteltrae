@@ -100,7 +100,6 @@ const Pricing = () => {
               
               <div className="text-center mb-6">
                 <h3 className="text-xl font-bold text-pastel-black dark:text-white mb-2">{plan.name}</h3>
-                <div className="text-3xl font-bold text-pastel-yellow mb-1">{plan.price}</div>
                 <p className="text-pastel-black/70 dark:text-white/70 text-sm">{plan.description}</p>
               </div>
 

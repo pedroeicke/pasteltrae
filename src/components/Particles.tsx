@@ -14,10 +14,12 @@ const Particles = () => {
     const generateParticles = () => {
       const newParticles = []
       for (let i = 0; i < 50; i++) {
+        const x = Math.random() * 96 + 2 // clamp to [2, 98]% to evitar overflow
+        const y = Math.random() * 100
         newParticles.push({
           id: i,
-          x: Math.random() * 100,
-          y: Math.random() * 100,
+          x,
+          y,
           size: Math.random() * 4 + 2,
           duration: Math.random() * 20 + 10,
           delay: Math.random() * 5
