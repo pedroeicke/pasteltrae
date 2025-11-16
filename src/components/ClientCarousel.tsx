@@ -19,53 +19,63 @@ const ClientCarousel = () => {
   const clientProjects: ClientProject[] = [
     {
       id: 1,
-      title: "E-commerce TechStore",
-      description: "Loja online de eletrônicos com foco em conversão",
-      category: "E-commerce",
-      image: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20e-commerce%20website%20mockup%20with%20tech%20products%2C%20clean%20design%2C%20professional%20layout%2C%20high%20conversion%20focus&image_size=landscape_16_9",
-      results: ["+180% conversão", "-45% bounce rate", "+220% vendas"],
-      testimonial: "Resultado incrível! Nossa conversão dobrou em 2 meses.",
-      clientName: "Carlos Silva - TechStore"
+      title: "CEAP Brasil",
+      description: "Página otimizada para apresentação de cursos, eventos e captação de inscritos.",
+      category: "Institucional",
+      image: "/bc26980ab4de0726dc4bb292f6fb3254.png",
+      results: ["+300% inscritos nos eventos", "+90% leads qualificados", "Alta conversão da página"],
+      testimonial: "O novo site elevou nossa taxa de conversão e deixou tudo muito mais profissional.",
+      clientName: "Direção do CEAP Brasil"
     },
     {
       id: 2,
-      title: "Consultoria Financeira Pro",
-      description: "Landing page para captura de leads qualificados",
-      category: "Serviços",
-      image: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20financial%20consulting%20landing%20page%20mockup%2C%20trustworthy%20design%2C%20lead%20generation%20focused%2C%20clean%20corporate%20style&image_size=landscape_16_9",
-      results: ["+250% leads", "CPL -60%", "+95% qualificação"],
-      testimonial: "Leads de alta qualidade e custo por lead reduzido pela metade!",
-      clientName: "Marina Santos - Consultora Financeira"
+      title: "Projeto Cavalos-Marinhos",
+      description: "Página informativa para apresentação do projeto, captação de apoiadores e divulgação científica.",
+      category: "Projeto",
+      image: "/c68e9dc1d220af2fb5358fe9bb30e787.png",
+      results: ["+140% tráfego orgânico", "+280% novos interessados", "+95% engajamento"],
+      testimonial: "A página trouxe muita visibilidade e credibilidade ao projeto. Ficou linda e funcional.",
+      clientName: "Coordenação do Projeto Cavalos-Marinhos"
     },
     {
       id: 3,
-      title: "Academia FitPower",
-      description: "Página de vendas para planos de academia",
-      category: "Fitness",
-      image: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Fitness%20gym%20landing%20page%20mockup%2C%20energetic%20design%2C%20subscription%20plans%2C%20motivational%20layout%2C%20modern%20fitness%20branding&image_size=landscape_16_9",
-      results: ["+150% matrículas", "+80% retenção", "ROI 300%"],
-      testimonial: "Nossa academia nunca teve tantas matrículas!",
-      clientName: "João Pedro - FitPower Academy"
+      title: "Plataforma Legislativo",
+      description: "Landing institucional focada na demonstração do sistema e captação de leads qualificados.",
+      category: "SaaS",
+      image: "/e9e225e8665a89311cc35fa071e62ab3.png",
+      results: ["+210% solicitações de demo", "+85% conversão", "Leads mais qualificados"],
+      testimonial: "A nova landing page trouxe muito mais leads qualificados e facilitou nossa prospecção.",
+      clientName: "Coordenador da Plataforma Legislativo"
     },
     {
       id: 4,
-      title: "Imobiliária CasaVerde",
-      description: "Site de captura para corretores de imóveis",
-      category: "Imobiliário",
-      image: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Real%20estate%20landing%20page%20mockup%2C%20property%20showcase%2C%20professional%20real%20estate%20design%2C%20lead%20capture%20focused%2C%20trustworthy%20layout&image_size=landscape_16_9",
-      results: ["+200% contatos", "+120% vendas", "Tempo -40%"],
-      testimonial: "Vendemos propriedades 40% mais rápido!",
-      clientName: "Ana Costa - CasaVerde Imóveis"
+      title: "Villa das Alamandas",
+      description: "Landing para reservas diretas, apresentação do espaço e destaque da experiência premium.",
+      category: "Hospedagem",
+      image: "/9cb47ef2cd7d02cbd918ad9d8de8316a.png",
+      results: ["+260% reservas diretas", "+92% consultas qualificadas", "Resposta mais rápida"],
+      testimonial: "As reservas diretas aumentaram muito depois da nova página. Ficou exatamente como queríamos.",
+      clientName: "Proprietária da Villa das Alamandas"
     },
     {
       id: 5,
-      title: "Restaurante SaborChef",
-      description: "Landing page para delivery e reservas",
-      category: "Food & Beverage",
-      image: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Restaurant%20landing%20page%20mockup%2C%20food%20delivery%20focused%2C%20appetizing%20design%2C%20online%20ordering%20system%2C%20modern%20culinary%20branding&image_size=landscape_16_9",
-      results: ["+175% delivery", "+90% reservas", "+130% faturamento"],
-      testimonial: "Nosso delivery explodiu! Melhor investimento do ano.",
-      clientName: "Chef Roberto - SaborChef"
+      title: "Pregoeiros Summit",
+      description: "Página de vendas para o maior evento de compras públicas do Brasil.",
+      category: "Evento",
+      image: "/eeeb53776dc7e8529526a32d8eea6ee2.png",
+      results: ["+470% inscrições na pré-venda", "+90% conversão", "Mais previsibilidade"],
+      testimonial: "O site ficou extremamente profissional e converteu muito acima da média. Entrega impecável.",
+      clientName: "Organização do Pregoeiros Summit"
+    },
+    {
+      id: 6,
+      title: "SECOMP RJ",
+      description: "Landing voltada para inscrições, programação e apresentação dos módulos do evento.",
+      category: "Evento Acadêmico",
+      image: "/Generated Image November 16, 2025 - 1_37PM.png",
+      results: ["+310% inscrições", "+82% conversão", "Mais engajamento"],
+      testimonial: "A página do SECOMP ficou incrível e ajudou muito na divulgação e nas inscrições.",
+      clientName: "Equipe CEAP Brasil"
     }
   ]
 
@@ -131,6 +141,7 @@ const ClientCarousel = () => {
                       src={clientProjects[currentIndex].image}
                       alt={clientProjects[currentIndex].title}
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                     <div className="absolute top-4 left-4">
                       <span className="bg-pastel-yellow text-pastel-black px-3 py-1 rounded-full text-sm font-semibold">
@@ -175,17 +186,29 @@ const ClientCarousel = () => {
                   >
                     <h4 className="font-semibold text-pastel-black dark:text-white mb-3">Resultados Alcançados:</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                      {clientProjects[currentIndex].results.map((result, index) => (
-                        <motion.div
-                          key={index}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
-                          className="bg-pastel-yellow/10 dark:bg-pastel-yellow/20 rounded-lg p-3 text-center"
-                        >
-                          <div className="font-bold text-pastel-yellow text-lg">{result}</div>
-                        </motion.div>
-                      ))}
+                      {clientProjects[currentIndex].results.map((result, index) => {
+                        const m = /^([+\-]?\d+%?)(?:\s+(.*))?$/.exec(result)
+                        const numberPart = m ? m[1] : ''
+                        const textPart = m && m[2] ? m[2] : result
+                        return (
+                          <motion.div
+                            key={index}
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
+                            className="bg-pastel-yellow/10 dark:bg-pastel-yellow/15 rounded-xl sm:rounded-2xl px-4 py-3 sm:px-5 sm:py-4 text-center flex flex-col items-center justify-center min-h-24 shadow-sm ring-1 ring-pastel-yellow/20"
+                          >
+                            {numberPart ? (
+                              <>
+                                <div className="text-pastel-yellow font-extrabold text-2xl sm:text-3xl leading-none mb-1">{numberPart}</div>
+                                <div className="text-pastel-yellow/90 font-medium text-xs sm:text-sm">{textPart}</div>
+                              </>
+                            ) : (
+                              <div className="text-pastel-yellow/90 font-medium text-sm">{textPart}</div>
+                            )}
+                          </motion.div>
+                        )
+                      })}
                     </div>
                   </motion.div>
 

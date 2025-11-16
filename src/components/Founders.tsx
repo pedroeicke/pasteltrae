@@ -52,9 +52,11 @@ const Founders = () => {
               viewport={{ once: true }}
               className="text-center group card-hover-effect bg-pastel-light-yellow/30 dark:bg-gray-800 p-8 rounded-xl transition-colors"
             >
-              <div className="w-32 h-32 bg-pastel-yellow rounded-full mx-auto mb-4 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300">
-                👨‍🚀
-              </div>
+              <img
+                src="/pedro.jpg.jpeg"
+                alt="Pedro - Tech Lead"
+                className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-pastel-yellow group-hover:scale-110 transition-transform duration-300"
+              />
               <h3 className="text-xl font-bold text-pastel-black dark:text-white mb-2">Pedro</h3>
               <p className="text-pastel-black/70 dark:text-white/70 mb-4">Tech Lead</p>
               <div className="flex justify-center space-x-4">
