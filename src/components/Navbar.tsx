@@ -11,7 +11,7 @@ const Navbar = () => {
     { href: '#servicos', label: 'Serviços' },
     { href: '#depoimentos', label: 'Depoimentos' },
     { href: '#como-funciona', label: 'Como funciona' },
-    { href: '#precos', label: 'Preços' },
+    { href: '#precos', label: 'Planos' },
     { href: '#faq', label: 'FAQ' },
     { href: '#contato', label: 'Contato' },
   ]
@@ -57,11 +57,9 @@ const Navbar = () => {
           <div className={`${isScrolled ? 'mx-auto max-w-5xl rounded-full bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-lg border border-black/5 dark:border-white/10 px-4 sm:px-6 overflow-hidden' : ''} transition-all duration-300`}>
           <div className={`flex justify-between items-center ${isScrolled ? 'h-14 lg:h-16' : 'h-16 lg:h-20'}`}>
             {/* Logo */}
-            <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-pastel-yellow rounded-lg flex items-center justify-center">
-                <span className="text-pastel-black font-bold text-xl font-display">P</span>
-              </div>
-              <span className={`font-bold text-xl font-display transition-colors text-pastel-black dark:text-white`}>
+            <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center space-x-3">
+              <img src="/pastel-icon-1.png" alt="Pastel" className="h-8 w-8 object-contain" />
+              <span className={`font-bold text-xl font-brand transition-colors text-pastel-black dark:text-white`}>
                 Pastel
               </span>
             </a>

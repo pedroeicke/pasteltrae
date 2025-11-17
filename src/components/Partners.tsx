@@ -2,13 +2,14 @@ import { motion } from 'framer-motion'
 
 const Partners = () => {
   const partners = [
-    { name: 'Mercado Livre', logo: '🛒' },
-    { name: 'Nubank', logo: '💳' },
-    { name: 'Rappi', logo: '📱' },
-    { name: '99', logo: '🚗' },
-    { name: 'iFood', logo: '🍔' },
-    { name: 'PicPay', logo: '💰' },
+    { name: 'CEAP Brasil', logo: '/logoceap.svg' },
+    { name: 'Plataforma LegisAtivo', logo: '/logoplataformaafontep.svg' },
+    { name: 'licito.guru', logo: '/logolicito.svg' },
+    { name: 'Villa das Alamandas', logo: '/logovilla.svg' },
+    { name: 'Cavalos Marinhos RJ', logo: '/logocavalos.svg' },
   ]
+
+  const row = [...partners, ...partners]
 
   return (
     <section className="py-16 bg-pastel-light-yellow/30 dark:bg-gray-800 transition-colors duration-300">
@@ -18,34 +19,44 @@ const Partners = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-10"
         >
           <h2 className="text-3xl font-bold text-pastel-black dark:text-white mb-4 font-display">
-            Confiam em nós
+            Quem já é cliente
           </h2>
           <p className="text-lg text-pastel-black/70 dark:text-white/70">
-            Empresas que já aceleraram seus projetos com a Pastel
+            Logos serão adicionadas em breve
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-          {partners.map((partner, index) => (
-            <motion.div
-              key={partner.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="text-center group cursor-pointer"
-            >
-              <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                {partner.logo}
+        <div className="relative overflow-hidden">
+          <motion.div
+            className="flex items-center gap-8 whitespace-nowrap"
+            animate={{ x: ['0%', '-100%'] }}
+            transition={{ ease: 'linear', duration: 20, repeat: Infinity }}
+          >
+            {row.map((partner, idx) => (
+              <div key={`${partner.name}-${idx}`} className="px-3">
+                <div className="h-12 w-12 rounded-lg bg-white dark:bg-gray-900 flex items-center justify-center shadow-sm">
+                  {(() => {
+                    const isSvg = partner.logo.toLowerCase().endsWith('.svg')
+                    const cls = `h-10 w-10 object-contain ${isSvg ? 'dark:brightness-0 dark:invert' : ''}`
+                    return (
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className={cls}
+                        onError={(e) => {
+                          const el = e.currentTarget
+                          el.style.display = 'none'
+                        }}
+                      />
+                    )
+                  })()}
+                </div>
               </div>
-              <p className="text-sm font-medium text-pastel-black/60 dark:text-white/60 group-hover:text-pastel-black dark:group-hover:text-white transition-colors">
-                {partner.name}
-              </p>
-            </motion.div>
-          ))}
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

@@ -318,3 +318,18 @@ body {
     content: '...';
   }
 }
+:root {
+  --pastel-brand-font: '8BIT WONDER', 'Space Grotesk', sans-serif;
+}
+
+@font-face {
+  font-family: '8BIT WONDER';
+  src: url('/fonts/8bit-wonder.woff2') format('woff2'),
+       url('/8bit-wonder.woff2') format('woff2'),
+       url('/fonts/8bit-wonder.ttf') format('truetype'),
+       url('/8bit-wonder.ttf') format('truetype'),
+       url('/8-BIT%20WONDER.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -14,11 +14,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-pastel-yellow rounded-lg flex items-center justify-center">
-                <span className="text-pastel-black font-bold text-xl font-display">P</span>
-              </div>
-              <span className="font-bold text-xl font-display">Pastel</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <img src="/pastel-icon-1.png" alt="Pastel" className="h-8 w-8 object-contain" />
+              <span className="font-bold text-xl font-brand">Pastel</span>
             </div>
             <p className="text-white/70 mb-6 max-w-md">
               Seu app feito na hora. Desenvolvimento ágil, entrega rápida e qualidade quentinha.
@@ -65,12 +63,12 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Contato</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:ola@pastel.dev" className="text-white/70 hover:text-pastel-yellow transition-colors">
-                  ola@pastel.dev
+                <a href="mailto:contato@pastelapps.dev" className="text-white/70 hover:text-pastel-yellow transition-colors">
+                  contato@pastelapps.dev
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/5511999999999" className="text-white/70 hover:text-pastel-yellow transition-colors">
+                <a href="https://wa.me/554861365368?text=Quero%20criar%20meu%20projeto%20com%20a%20Pastel!" className="text-white/70 hover:text-pastel-yellow transition-colors">
                   WhatsApp
                 </a>
               </li>

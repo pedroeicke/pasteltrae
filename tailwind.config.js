@@ -17,6 +17,7 @@ export default {
       fontFamily: {
         'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
         'display': ['Space Grotesk', 'sans-serif'],
+        'brand': ['"8BIT WONDER"', 'Space Grotesk', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out',
