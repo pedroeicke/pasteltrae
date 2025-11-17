@@ -25,7 +25,7 @@ export default {
         'pulse-slow': 'pulse 3s infinite',
         'bounce-slow': 'bounce 2s infinite',
         'float': 'float 3s ease-in-out infinite',
-        'logos-marquee': 'logosMarquee 40s linear infinite',
+        'logos-marquee': 'logosMarquee 50s linear infinite',
       },
       keyframes: {
         fadeIn: {

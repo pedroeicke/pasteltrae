@@ -39,14 +39,35 @@ const Partners = () => {
               const cls = `${sizeBase} w-auto object-contain ${darkFilter}`
               return (
                 <div key={`${partner.name}-${idx}`} className="flex-shrink-0 px-6 flex items-center justify-center">
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className={cls}
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = '/pastel-icon-1.png'
-                    }}
-                  />
+                  {isSuperLista ? (
+                    <>
+                      <img
+                        src="/superlistalogo.png"
+                        alt={partner.name}
+                        className={`${sizeBase} w-auto object-contain block dark:hidden`}
+                        onError={(e) => {
+                          (e.currentTarget as HTMLImageElement).src = '/pastel-icon-1.png'
+                        }}
+                      />
+                      <img
+                        src="/superlistab.png"
+                        alt={partner.name}
+                        className={`${sizeBase} w-auto object-contain hidden dark:block`}
+                        onError={(e) => {
+                          (e.currentTarget as HTMLImageElement).src = '/pastel-icon-1.png'
+                        }}
+                      />
+                    </>
+                  ) : (
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className={cls}
+                      onError={(e) => {
+                        (e.currentTarget as HTMLImageElement).src = '/pastel-icon-1.png'
+                      }}
+                    />
+                  )}
                 </div>
               )
             })}
